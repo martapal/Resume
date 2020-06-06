@@ -1,0 +1,177 @@
+/*Universal Styles */
+
+.html{
+  font-size: 20px;
+ 
+}
+
+.body{
+  background-color:rgb(250, 251, 251);
+}
+
+
+/*Banner Section */
+
+#banner{
+  background-image:url("codingwork.jpg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  height: 36rem;
+  margin-top: 0.05%;
+}
+
+#banner h1{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: 2.75rem;
+  color:black;
+  margin-bottom: 20%;
+  
+}
+
+/*Blog Post */
+
+.post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1;
+  columns: #444444;
+  margin-top: 7.5%;
+  margin-bottom: 2.5%;
+  width: 52%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.post h2{
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.post p{
+  min-width: 10%;
+  min-height: 20%;
+  margin-bottom: auto;
+  margin: 0em;
+  font-size: 0.90rem;
+}
+.post h3 h1 {
+  margin-bottom: 0em;
+}
+
+.post img{
+  display: flex;
+  width: 90%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+/*Blog Images */
+
+.images{
+  display: flex;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  
+}
+.image-container img{
+ float: center;
+ width: 90%;
+ margin-left:3%;
+ flex: 33.33%;
+ padding: 5px;
+}
+
+
+/*Footer*/
+
+.contact img{
+  width:20%;
+  height:auto;
+  max-width: 100;
+  margin-left: 40%;
+  margin-right: auto;
+  margin-bottom: 0;
+
+}
+
+.contact h4{
+
+  margin-top: 10%;
+  font-size: 1.50rem;
+  text-align: center;
+}
+ /*!--SIze for Galaxys5 */
+
+@media only screen and (device-width: 360px) 
+and (device-height: 640px)and (orientation: portrait) and (orientation: landscape) {
+  
+  #banner{
+    background-image: none;
+    background-position: center;
+    align-items: center;
+    margin-left: 60%;
+  }
+ 
+  .images{
+    display: flex;
+  }
+
+  .image-container img{    
+    width: 100%;
+    margin-left: 20%;
+  }
+ 
+  #banner.h1 {
+    font-size: 3rem;
+    height: 20rem;
+  }
+  .post{
+    display: flex;
+    margin-left: 40%;
+  }
+  .post h2{
+    font-size: 2.5rem;
+  
+  }
+  .post img{
+    width: 70%;
+  }
+
+  .post p{
+    font-size: 3rem;
+    
+  
+  }
+  .post h3{
+    font-size: 2.5rem;
+ 
+  }
+
+  .contact img{
+    width:20%;
+    height:auto;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+
+  .contact h4{
+    float:center;
+    margin-left: 40%;
+  }
+} 
